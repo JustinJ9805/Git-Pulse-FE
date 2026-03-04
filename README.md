@@ -49,3 +49,34 @@ Expected response shape:
   }
 }
 ```
+
+## Architecture Diagram
+
+![Architecture Diagram](architecture-diagram.png)
+
+## How It Works
+
+1. User enters a GitHub repository URL
+2. The frontend sends the repo to the backend API
+3. The backend fetches repository metadata from the GitHub API
+4. Structured repository data is sent to the Gemini API
+5. Gemini generates insights about repository health and sustainability
+6. Results are returned to the frontend and displayed to the user
+
+---
+
+## Tech Stack
+
+Frontend:
+- React
+- Vite
+
+Backend:
+- Node.js
+- Express
+
+APIs:
+- GitHub REST API
+- Google Gemini API
+
+---
